@@ -4,19 +4,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bairthday Calculator</title>
+    <title>Birthday Age Calculator</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <h1>Birthday & Age Calculator</h1>
+    <div class="container">
+        <h1>🎂 Birthday Age Calculator</h1>
+        <p>Enter your date of birth and find out your exact age!</p>
 
-    <form id="dateForm">
-        <input type="date" id="input_date" required />
-        <button type="submit">Done</button>
-    </form>
+        <div class="card">
+            <input type="date" id="dob">
+            <button onclick="calculateAge()">Calculate Age</button>
+        </div>
 
-    <script type="module" src="./app.js"></script>
+        <div id="result"></div>
+    </div>
+
+    <script src="./app.js"></script>
 </body>
 
 </html>
